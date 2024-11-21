@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONT POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- PHOSPHOR ICON -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- WEBSITE ICON -->
+    <link rel="icon" href="img/Logo.png" />
+  </head>
+  <body class="font-poppins">
+    <!-- NAVBAR -->
+    <nav class="bg-white border-b">
+      <div
+        class="container mx-auto flex justify-between py-[18px] lg:py-7 px-4"
+      >
+        <div class="nav-logo flex items-center gap-1">
+          <div class="image_logo">
+            <img src="img/Logo.png" alt="logo" class="w-6" />
+          </div>
+          <div class="name_logo">
+            <h1 class="font-extrabold text-xl">
+              JAMA<span class="text-blue-600">IKA</span>
+            </h1>
+          </div>
+        </div>
+        <div class="toggle lg:hidden text-3xl cursor-pointer">
+          <i class="ph ph-list"></i>
+        </div>
+        <div class="list-menu hidden lg:flex items-center">
+          <ul class="flex gap-6 font-semibold">
+            <li
+              class="relative px-3 pb-2 before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-black before:transition before:duration-300 hover:before:origin-left hover:before:scale-x-100"
+            >
+              <a href="about.html">About</a>
+            </li>
+            <li
+              class="relative px-3 pb-2 before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-black before:transition before:duration-300 hover:before:origin-left hover:before:scale-x-100"
+            >
+              <a href="services.html">Services</a>
+            </li>
+            <li
+              class="relative px-3 pb-2 before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-black before:transition before:duration-300 hover:before:origin-left hover:before:scale-x-100"
+            >
+              <a href="strength.html">Our Strength</a>
+            </li>
+            <li
+              class="relative px-3 pb-2 before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-black before:transition before:duration-300 hover:before:origin-left hover:before:scale-x-100"
+            >
+              <a href="customer.html">Customer Care</a>
+            </li>
+          </ul>
+        </div>
+        <div class="login hidden lg:flex items-center">
+          <button
+            class="bg-blue-500 text-white py-2 px-4 rounded-md hover:underline hover:bg-blue-700 transition-all duration-200 ease-in-out"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- HERO -->
+    <section class="hero pt-8 lg:pt-20 mb-20">
+      <div
+        class="container p-6 lg:px-10 mx-auto grid md:grid-cols-3 gap-6 text-center md:text-left"
+      >
+        <div class="hero_tittle md:col-span-2">
+          <h1 class="font-black text-3xl md:text-4xl lg:text-5xl">
+            We Provide logistics solution tailor-made for individual customer!
+          </h1>
+        </div>
+        <div class="hero_context flex flex-col md:justify-end">
+          <h3 class="lg:text-lg">
+            Generix Express provides customized services for customers around
+            the world from 50+ leading industries. For more information please
+            <span class="underline cursor-pointer">contact us!</span>
+          </h3>
+        </div>
+        <div class="hero_img md:col-span-3">
+          <img src="img/hero.avif" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- CHOOSE US -->
+    <section class="choose p-6 lg:pt-20 lg:px-10">
+      <div class="choose_tittle text-center lg:text-left" data-aos="fade-down">
+        <h1 class="font-black text-3xl md:text-4xl lg:text-5xl">
+          Why choose us?
+        </h1>
+      </div>
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center justify-center gap-4 lg:gap-8 mt-20"
+      >
+        <div
+          class="card flex flex-col gap-3 p-3 lg:pr-6 text-center lg:text-left"
+          data-aos="fade-down"
+        >
+          <i class="ph-fill ph-users-three text-4xl"></i>
+          <h1 class="font-black text-lg">Top team</h1>
+          <p>
+            Sometimes features require a short description. This can be detailed
+            description or just a short text
+          </p>
+          <div
+            class="LMore flex justify-center items-center gap-2 lg:justify-start cursor-pointer text-[#007DFC]"
+          >
+            <span class="font-bold">Learn more</span>
+            <i class="ph ph-arrow-right"></i>
+          </div>
+        </div>
+        <div
+          class="card flex flex-col gap-3 p-3 lg:pr-6 text-center lg:text-left"
+          data-aos="fade-down"
+        >
+          <i class="ph-fill ph-headset text-4xl"></i>
+          <h1 class="font-black text-lg">Costumer Support</h1>
+          <p>
+            Sometimes features require a short description. This can be detailed
+            description or just a short text
+          </p>
+          <div
+            class="LMore flex justify-center items-center gap-2 lg:justify-start cursor-pointer text-[#007DFC]"
+          >
+            <span class="font-bold">Learn more</span>
+            <i class="ph ph-arrow-right"></i>
+          </div>
+        </div>
+        <div
+          class="card flex flex-col gap-3 p-3 lg:pr-6 text-center lg:text-left"
+          data-aos="fade-down"
+        >
+          <i class="ph-fill ph-tag text-4xl"></i>
+          <h1 class="font-black text-lg">Competitive Rates</h1>
+          <p>
+            Sometimes features require a short description. This can be detailed
+            description or just a short text
+          </p>
+          <div
+            class="LMore flex justify-center items-center gap-2 lg:justify-start cursor-pointer text-[#007DFC]"
+          >
+            <span class="font-bold">Learn more</span>
+            <i class="ph ph-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- QUOTES -->
+    <section class="quotes pt-24 p-6 lg:pt-20 lg:px-10">
+      <div
+        class="container bg-[#f7f7f7] mx-auto grid md:grid-cols-2 lg:grid-cols-3"
+      >
+        <img src="img/quotes.jpg" alt="" class="h-full" />
+        <div class="quote lg:col-span-2 p-5 lg:p-9 lg:pr-16">
+          <p class="md:text-[18px] lg:text-2xl">
+            "Designspace has consistently delivered above and beyond my
+            expectations! Brilliant design work, incredible response time and a
+            really friendly team"
+          </p>
+          <div class="author flex items-end justify-between mt-7">
+            <div class="profile">
+              <p class="text-sm font-bold">Jiva Andika</p>
+              <span class="text-xs">CEO OF JAMAIKA</span>
+            </div>
+            <div class="logo">
+              <div class="flex items-center justify-end gap-1">
+                <div class="image_logo">
+                  <img src="img/Logo.png" alt="logo" class="w-4" />
+                </div>
+                <div class="name_logo">
+                  <h1 class="font-extrabold text-sm">
+                    JAMA<span class="text-blue-600">IKA</span>
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TOOLS -->
+    <section class="tools p-6 lg:pt-20 lg:px-10">
+      <div class="tools_tittle text-center lg:text-left" data-aos="fade-down">
+        <h1 class="font-black text-3xl md:text-4xl lg:text-5xl lg:w-[690px]">
+          The tools you need to win and keep more clients
+        </h1>
+      </div>
+      <div
+        class="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-4 lg:gap-8 mt-20"
+      >
+        <div
+          class="card flex flex-col gap-3 p-3 lg:pr-6 text-center lg:text-left"
+          data-aos="fade-down"
+        >
+          <i class="ph-fill ph-boat text-4xl"></i>
+          <h1 class="font-black text-lg">Marine Cargo Services</h1>
+          <p>
+            Sometimes features require a short description. This can be detailed
+            description or just a short text
+          </p>
+        </div>
+        <div
+          class="card flex flex-col gap-3 p-3 lg:pr-6 text-center lg:text-left"
+          data-aos="fade-down"
+        >
+          <i class="ph-fill ph-airplane text-4xl"></i>
+          <h1 class="font-black text-lg">Air Cargo Services</h1>
+          <p>
+            Sometimes features require a short description. This can be detailed
+            description or just a short text
+          </p>
+        </div>
+        <div
+          class="card flex flex-col gap-3 p-3 lg:pr-6 text-center lg:text-left"
+          data-aos="fade-down"
+        >
+          <i class="ph-fill ph-truck-trailer text-4xl"></i>
+          <h1 class="font-black text-lg">Inland Cargo Services</h1>
+          <p>
+            Sometimes features require a short description. This can be detailed
+            description or just a short text
+          </p>
+        </div>
+        <div
+          class="card flex flex-col gap-3 p-3 lg:pr-6 text-center lg:text-left"
+          data-aos="fade-down"
+        >
+          <i class="ph-fill ph-truck text-4xl"></i>
+          <h1 class="font-black text-lg">Heavy Equipment Services</h1>
+          <p>
+            Sometimes features require a short description. This can be detailed
+            description or just a short text
+          </p>
+        </div>
+        <div
+          class="card flex flex-col gap-3 p-3 lg:pr-6 text-center lg:text-left"
+          data-aos="fade-down"
+        >
+          <i class="ph-fill ph-car text-4xl"></i>
+          <h1 class="font-black text-lg">Car Shipping Services</h1>
+          <p>
+            Sometimes features require a short description. This can be detailed
+            description or just a short text
+          </p>
+        </div>
+        <div
+          class="card flex flex-col gap-3 p-3 lg:pr-6 text-center lg:text-left"
+          data-aos="fade-down"
+        >
+          <i class="ph-fill ph-shipping-container text-4xl"></i>
+          <h1 class="font-black text-lg">Container Sea Cargo</h1>
+          <p>
+            Sometimes features require a short description. This can be detailed
+            description or just a short text
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ -->
+    <section class="faq quotes pt-24 p-6 py-40 lg:pt-20 lg:px-10">
+      <div class="faq tittle text-center lg:text-left" data-aos="fade-down">
+        <h1 class="font-black text-3xl md:text-4xl lg:text-5xl">
+          Frequently asked question
+        </h1>
+      </div>
+      <div
+        class="container mt-20 flex flex-col justify-between gap-8 lg:px-16 w-full"
+      >
+        <ul class="relative">
+          <input
+            type="checkbox"
+            class="absolute w-full opacity-0 peer cursor-pointer h-7"
+          />
+          <div class="show-dropdown flex justify-between">
+            <li class="text-lg md:text-xl lg:text-2xl font-bold">
+              What mostly people want to ask no .1
+            </li>
+            <i class="ph-bold ph-caret-down pr-4"></i>
+          </div>
+          <div
+            class="dropdown mt-2 h-1 peer-checked:h-min flex flex-col gap-3 border-b border-black transition-all ease-in-out duration-150"
+          >
+            <div class="overflow-hidden">
+              <li class="text-sm md:p-2 md:text-base lg:text-lg lg:w-[700px]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
+                cum tempore nostrum sapiente modi a soluta commodi vitae
+                repellat error, quod dicta cupiditate autem aliquam, magnam
+                earum consequatur eius doloremque.
+              </li>
+            </div>
+          </div>
+        </ul>
+        <ul class="relative">
+          <input
+            type="checkbox"
+            class="absolute w-full opacity-0 peer cursor-pointer h-7"
+          />
+          <div class="show-dropdown flex justify-between">
+            <li class="text-lg md:text-xl lg:text-2xl font-bold">
+              What mostly people want to ask no .2
+            </li>
+            <i class="ph-bold ph-caret-down pr-4"></i>
+          </div>
+          <div
+            class="dropdown mt-2 h-1 peer-checked:h-min flex flex-col gap-3 border-b border-black transition-all ease-in-out duration-150"
+          >
+            <div class="overflow-hidden">
+              <li class="text-sm md:p-2 md:text-base lg:text-lg lg:w-[700px]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
+                cum tempore nostrum sapiente modi a soluta commodi vitae
+                repellat error, quod dicta cupiditate autem aliquam, magnam
+                earum consequatur eius doloremque.
+              </li>
+            </div>
+          </div>
+        </ul>
+        <ul class="relative">
+          <input
+            type="checkbox"
+            class="absolute w-full opacity-0 peer cursor-pointer h-7"
+          />
+          <div class="show-dropdown flex justify-between">
+            <li class="text-lg md:text-xl lg:text-2xl font-bold">
+              What mostly people want to ask no .3
+            </li>
+            <i class="ph-bold ph-caret-down pr-4"></i>
+          </div>
+          <div
+            class="dropdown mt-2 h-1 peer-checked:h-min flex flex-col gap-3 border-b border-black transition-all ease-in-out duration-150"
+          >
+            <div class="overflow-hidden">
+              <li class="text-sm md:p-2 md:text-base lg:text-lg lg:w-[700px]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
+                cum tempore nostrum sapiente modi a soluta commodi vitae
+                repellat error, quod dicta cupiditate autem aliquam, magnam
+                earum consequatur eius doloremque.
+              </li>
+            </div>
+          </div>
+        </ul>
+        <ul class="relative">
+          <input
+            type="checkbox"
+            class="absolute w-full opacity-0 peer cursor-pointer h-7"
+          />
+          <div class="show-dropdown flex justify-between">
+            <li class="text-lg md:text-xl lg:text-2xl font-bold">
+              What mostly people want to ask no .4
+            </li>
+            <i class="ph-bold ph-caret-down pr-4"></i>
+          </div>
+          <div
+            class="dropdown mt-2 h-1 peer-checked:h-min flex flex-col gap-3 border-b border-black transition-all ease-in-out duration-150"
+          >
+            <div class="overflow-hidden">
+              <li class="text-sm md:p-2 md:text-base lg:text-lg lg:w-[700px]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
+                cum tempore nostrum sapiente modi a soluta commodi vitae
+                repellat error, quod dicta cupiditate autem aliquam, magnam
+                earum consequatur eius doloremque.
+              </li>
+            </div>
+          </div>
+        </ul>
+        <ul class="relative">
+          <input
+            type="checkbox"
+            class="absolute w-full opacity-0 peer cursor-pointer h-7"
+          />
+          <div class="show-dropdown flex justify-between">
+            <li class="text-lg md:text-xl lg:text-2xl font-bold">
+              What mostly people want to ask no .5
+            </li>
+            <i class="ph-bold ph-caret-down pr-4"></i>
+          </div>
+          <div
+            class="dropdown mt-2 h-1 peer-checked:h-min flex flex-col gap-3 border-b border-black transition-all ease-in-out duration-150"
+          >
+            <div class="overflow-hidden">
+              <li class="text-sm md:p-2 md:text-base lg:text-lg lg:w-[700px]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
+                cum tempore nostrum sapiente modi a soluta commodi vitae
+                repellat error, quod dicta cupiditate autem aliquam, magnam
+                earum consequatur eius doloremque.
+              </li>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="pt-12 p-6 lg:pt-24 lg:px-10 border-t border-black">
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-between gap-4"
+      >
+        <div class="company_profile flex flex-col gap-2">
+          <div class="nav-logo flex items-center gap-1">
+            <div class="image_logo">
+              <img src="img/Logo.png" alt="logo" class="w-6" />
+            </div>
+            <div class="name_logo">
+              <h1 class="font-extrabold text-xl">
+                JAMA<span class="text-blue-600">IKA</span>
+              </h1>
+            </div>
+          </div>
+          <p class="text-sm font-light md:text-base md:w-96">
+            Jamaika Express provides costumized services for customers around
+            the world from 50+ leading industries.
+          </p>
+        </div>
+        <div class="product flex flex-col gap-2">
+          <p class="font-bold md:text-xl">Products</p>
+          <ul class="flex flex-col gap-1">
+            <li
+              class="cursor-pointer text-sm font-light text-slate-700 md:text-base"
+            >
+              Features
+            </li>
+            <li
+              class="cursor-pointer text-sm font-light text-slate-700 md:text-base"
+            >
+              Enterprise
+            </li>
+            <li
+              class="cursor-pointer text-sm font-light text-slate-700 md:text-base"
+            >
+              Security
+            </li>
+            <li
+              class="cursor-pointer text-sm font-light text-slate-700 md:text-base"
+            >
+              Customer Stories
+            </li>
+            <li
+              class="cursor-pointer text-sm font-light text-slate-700 md:text-base"
+            >
+              Pricing
+            </li>
+            <li
+              class="cursor-pointer text-sm font-light text-slate-700 md:text-base"
+            >
+              Demo
+            </li>
+          </ul>
+        </div>
+        <div class="company flex flex-col gap-2">
+          <p class="font-bold">Company</p>
+          <ul class="flex flex-col gap-1">
+            <li
+              class="cursor-pointer text-sm font-light text-slate-700 md:text-base"
+            >
+              About Us
+            </li>
+            <li
+              class="cursor-pointer text-sm font-light text-slate-700 md:text-base"
+            >
+              Leadership
+            </li>
+            <li
+              class="cursor-pointer text-sm font-light text-slate-700 md:text-base"
+            >
+              News
+            </li>
+            <li
+              class="cursor-pointer text-sm font-light text-slate-700 md:text-base"
+            >
+              Media kit
+            </li>
+            <li
+              class="cursor-pointer text-sm font-light text-slate-700 md:text-base"
+            >
+              Career
+            </li>
+            <li
+              class="cursor-pointer text-sm font-light text-slate-700 md:text-base"
+            >
+              Documentation
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container mt-4 md:mt-16">
+        <div class="copy flex flex-col md:flex-row md:justify-between gap-1">
+          <p class="text-sm font-light text-slate-700">
+            &copy; 2023 Jamaika Express. All rights reserved.
+          </p>
+          <ul class="flex gap-2">
+            <li
+              class="cursor-pointer text-sm font-light text-slate-700 md:text-base"
+            >
+              Terms of Service
+            </li>
+            .
+            <li
+              class="cursor-pointer text-sm font-light text-slate-700 md:text-base"
+            >
+              Privacy Policy
+            </li>
+            .
+            <li
+              class="cursor-pointer text-sm font-light text-slate-700 md:text-base"
+            >
+              Cookie Policy
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
